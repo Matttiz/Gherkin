@@ -71,6 +71,10 @@ local.properties
 .scala_dependencies
 .worksheet
 
+### Intelij Idea ###
+.idea/
+*.iml
+
 ### Eclipse Patch ###
 # Eclipse Core
 .project
