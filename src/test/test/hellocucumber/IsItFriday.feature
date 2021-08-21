@@ -14,7 +14,7 @@ Feature: Is it Friday yet?
   Scenario: Today is Friday
     Given Today
     When I ask whether it's Friday yet
-    Then I should be told "Yeah"
+    Then I should be told "Nope"
 
   Scenario Outline: Today is or is not Friday
     Given Today is "<day>"
