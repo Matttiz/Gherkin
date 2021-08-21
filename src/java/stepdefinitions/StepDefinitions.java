@@ -1,4 +1,4 @@
-package hellocucumber;
+package stepdefinitions;
 
 import helpers.IsItFriday;
 import io.cucumber.java.en.Given;
@@ -6,14 +6,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import utils.WeekDay;
 
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.util.Calendar;
-
 import static org.junit.Assert.assertEquals;
 
 
-public class Stepdefs {
+public class StepDefinitions {
     private String today;
     private String actualAnswer;
 
