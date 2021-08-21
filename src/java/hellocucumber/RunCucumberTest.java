@@ -6,10 +6,14 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features="src/test/hellocucumber/" // Pełna ścieżka
-        ,plugin = {"pretty"}
-        ,glue = "stepdefinitions" // nazwa pakietu
+        features = "src/test/hellocucumber/" // Pełna ścieżka do features
+        , plugin = {"pretty"}
+        , glue = "stepdefinitions" // nazwa pakietu do step definitions
+//        , tags = "@Day,@Examples,@Friday,@Sunday,@Today"
+        ,tags = "@Day and not @Sunday"
+
 )
 public class RunCucumberTest {
 
 }
+
